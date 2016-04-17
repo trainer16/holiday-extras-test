@@ -1,0 +1,16 @@
+{
+  "environmentVariables": {
+    "SERVERLESS_PROJECT": "${project}",
+    "SERVERLESS_STAGE": "${stage}",
+    "SERVERLESS_REGION": "${region}",
+    "DYNAMO_DB_TABLE": "${dynamoDbTable}"
+  },
+  "apiRequestTemplate": {
+    "application/json": {
+      "httpMethod": "$context.httpMethod",
+      "id" : "$input.params('id')",
+      "body": "$input.json('$')",
+      "queryParams": "$input.params().querystring"
+    }
+  }
+}

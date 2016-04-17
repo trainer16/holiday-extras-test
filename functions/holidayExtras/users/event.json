@@ -1,0 +1,10 @@
+{
+  "httpMethod": "DELETE",
+  "id": "2eb160a0-04bf-11e6-a623-47efa0b60a54",
+  "body": {
+    "email":"j.smith@mail.com",
+    "forename":"George",
+    "surname":"Smith"
+  },
+  "queryParams": "{}"
+}
