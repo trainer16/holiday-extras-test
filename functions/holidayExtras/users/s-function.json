@@ -57,7 +57,7 @@
       }
     },
     {
-      "path": "users",
+      "path": "users/{id}",
       "method": "PUT",
       "type": "AWS",
       "authorizationType": "none",
@@ -101,7 +101,7 @@
       }
     },
     {
-      "path": "users",
+      "path": "users/{id}",
       "method": "DELETE",
       "type": "AWS",
       "authorizationType": "none",

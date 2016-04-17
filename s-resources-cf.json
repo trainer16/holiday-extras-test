@@ -43,37 +43,11 @@
             {
               "Effect": "Allow",
               "Action": [
-                "sqs:ChangeMessageVisibility",
-                "sqs:ReceiveMessage",
-                "sqs:SendMessage",
-                "sqs:GetQueueAttributes",
-                "sqs:GetQueueUrl",
-                "sqs:ListQueues",
-                "sqs:DeleteMessage"
-              ],
-              "Resource": "arn:aws:sqs:${region}:*:*"
-            },
-            {
-              "Effect": "Allow",
-              "Action": [
-                "lambda:Invoke*"
-              ],
-              "Resource": "arn:aws:lambda:${region}:*:*"
-            },
-            {
-              "Effect": "Allow",
-              "Action": [
-                "s3:GetObject",
-                "s3:PutObject"
-              ],
-              "Resource": "arn:aws:s3:::${s3Bucket}/*"
-            },
-            {
-              "Effect": "Allow",
-              "Action": [
                 "dynamodb:Get*",
                 "dynamodb:PutItem",
-                "dynamodb:Query"
+                "dynamodb:Scan",
+                "dynamodb:DeleteItem",
+                "dynamodb:UpdateItem"
               ],
               "Resource": "arn:aws:dynamodb:${region}:*:*"
             }
